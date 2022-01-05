@@ -1,8 +1,6 @@
 <?php 
 require_once "model/conexao.php";
-$tecnologias = conexao::select(
-    "tecnologia,", "id, nome"
-);
+$tecnologias = conexao::select("tecnologia,", "id, nome");
 print_r($tecnologias);
 ?>
 <!DOCTYPE html>
