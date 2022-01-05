@@ -1,3 +1,10 @@
+<?php 
+require_once "model/conexao.php";
+$tecnologias = conexao::select(
+    "tecnologia,", "id, nome"
+);
+print_r($tecnologias);
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
